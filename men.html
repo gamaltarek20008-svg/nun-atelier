@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1b3b2f" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <title>Men — NŪN Atelier</title>
+    <meta
+      name="description"
+      content="NŪN Atelier Men: shirts, tees, trousers and outerwear in traceable cloth. Filter by size, colour and price."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=Sora:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      (function () {
+        var root = document.documentElement;
+        try {
+          var t = localStorage.getItem("nun.theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          root.setAttribute("data-theme", t);
+        } catch (e) {
+          root.setAttribute("data-theme", "light");
+        }
+        try {
+          if (localStorage.getItem("nun.lang") === "ar") {
+            root.lang = "ar";
+            root.dir = "rtl";
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body data-page="category" data-category="men">
+    <a class="sr-only" href="#app">Skip to content</a>
+    <div id="siteHeaderMount"></div>
+    <main id="app"></main>
+    <div id="siteFooterMount"></div>
+    <noscript>
+      <p style="padding: 2rem; font-family: sans-serif">
+        This storefront needs JavaScript to render the collection. Enable it and reload.
+      </p>
+    </noscript>
+    <script src="assets/js/data.js" defer></script>
+    <script src="assets/js/i18n-ar.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>
