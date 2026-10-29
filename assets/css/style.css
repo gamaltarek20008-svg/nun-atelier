@@ -254,7 +254,7 @@ ul {
 
 .btn-solid {
   background: var(--green);
-  border-color: var(--green-ink);
+  border-color: var(--green);
   color: var(--on-green);
 }
 
@@ -1081,15 +1081,17 @@ ul {
   border-radius: var(--radius-sm);
   background: rgba(251, 250, 247, 0.94);
   backdrop-filter: blur(6px);
+  color: #14170f;
   font-size: 0.62rem;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   transform: translateY(calc(100% + 12px));
-  transition: transform 0.35s var(--ease), background 0.25s;
+  transition: transform 0.35s var(--ease), background 0.25s, color 0.25s;
 }
 
-.quick-add:hover {
+.quick-add:hover,
+.quick-add:focus-visible {
   background: var(--green);
   color: var(--on-green);
 }
@@ -1213,7 +1215,7 @@ ul {
 
 .rail-nav button:hover {
   background: var(--green);
-  border-color: var(--green-ink);
+  border-color: var(--green);
   color: var(--on-green);
 }
 
@@ -1805,7 +1807,7 @@ ul {
 
 .size-chip[aria-pressed="true"] {
   background: var(--green);
-  border-color: var(--green-ink);
+  border-color: var(--green);
   color: var(--on-green);
 }
 
@@ -2006,7 +2008,7 @@ ul {
 
 .page-btn[aria-current="page"] {
   background: var(--green);
-  border-color: var(--green-ink);
+  border-color: var(--green);
   color: var(--on-green);
 }
 
@@ -2283,7 +2285,7 @@ ul {
 
 .size-btn[aria-pressed="true"] {
   background: var(--green);
-  border-color: var(--green-ink);
+  border-color: var(--green);
   color: var(--on-green);
 }
 
